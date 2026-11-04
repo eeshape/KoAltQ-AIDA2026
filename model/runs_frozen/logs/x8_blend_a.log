@@ -1,0 +1,48 @@
+[run] x8 start 16:27:46 args=[]
+  lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+[submission] /content/runs/submissions/S1_best_single_l0.csv counts={'적절': 398, '무의미형': 2, '파일명형': 8, '중복형': 24, '장식오용형': 4, '불충분형': 164, '무관형': 0}
+[submission] /content/runs/submissions/S2_ensemble_bias_l0.csv counts={'적절': 393, '무의미형': 2, '파일명형': 8, '중복형': 20, '장식오용형': 10, '불충분형': 167, '무관형': 0}
+[submission] /content/runs/submissions/S3_ensemble_quota_l0.csv counts={'적절': 408, '무의미형': 5, '파일명형': 8, '중복형': 36, '장식오용형': 6, '불충분형': 133, '무관형': 4}
+{
+ "best_single": "x2_hgb_ocr",
+ "ensemble_weights": {
+  "x1_ctx_lr": 0.12,
+  "x2_hgb_ocr": 0.6,
+  "x3_internvl35_14b_lr": 0.12,
+  "x7_stack_lgbm": 0.16
+ },
+ "bias": {
+  "적절": -0.5,
+  "무의미형": 0.95,
+  "파일명형": 0.0,
+  "중복형": 0.85,
+  "장식오용형": -0.35,
+  "불충분형": -0.05,
+  "무관형": 0.0
+ },
+ "residual_target": {
+  "적절": 272,
+  "무의미형": 3,
+  "파일명형": 0,
+  "중복형": 34,
+  "장식오용형": 2,
+  "불충분형": 34,
+  "무관형": 4
+ }
+}
+  S2/S3 base: ensemble
+  honest_best_single         comp 0.5989 macro 0.4227 bin 0.7752
+  honest_best_single_tw      comp 0.5569 macro 0.3712 bin 0.7427
+  honest_ensemble            comp 0.6390 macro 0.4990 bin 0.7789
+  honest_ensemble_bias       comp 0.6373 macro 0.4989 bin 0.7757
+  honest_ensemble_tw         comp 0.6095 macro 0.4582 bin 0.7608
+  honest_ensemble_bias_tw    comp 0.6022 macro 0.4513 bin 0.7530
+Traceback (most recent call last):
+  File "/content/code/koaltq2/run.py", line 37, in main
+    mod.main()
+    ~~~~~~~~^^
+  File "/content/code/koaltq2/x8_blend.py", line 244, in main
+    print("  lora:", json.dumps({k: (v if not isinstance(v, dict) else round(v['composite'], 4)) for k, v in report["lora"].items()},
+                                                                             ~^^^^^^^^^^^^^
+KeyError: 'composite'
+[run] x8 FAILED after 5.9s

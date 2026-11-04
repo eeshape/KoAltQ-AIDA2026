@@ -1,0 +1,67 @@
+     0.0s  $ bash scripts/reproduce_best.sh
+     0.1s  [run] x8 start 00:20:52 args=['--objective', 'lbq', '--wlora', '0.4']
+   396.0s    per-fold honest quota sim: {'caruana': 0.8669, 'single': 0.866, 'blend:x17_stack_lgbm_b109': 0.8811, 'blend:x7_stack
+   466.4s    lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+   466.4s    lora candidate x6_qwen38_27b_lora_fold: fold0 comp 0.7227
+   466.4s    lora grid (fold0): {'0.0': 0.8709, '0.2': 0.8817, '0.4': 0.8809, '0.6': 0.8719} -> w_lora 0.4
+   466.6s  [submission] /tmp/tmp.3rtslGUFgl/submissions/S1_best_single_l0_lbq.csv counts={'적절': 406, '무의미형': 5, '파일명형': 8, '중복형':
+   466.6s  [submission] /tmp/tmp.3rtslGUFgl/submissions/S2_ensemble_bias_l0_lbq.csv counts={'적절': 388, '무의미형': 5, '파일명형': 8, '중복형
+   466.6s  [x8] harness: {"H0_public_row | applied": 109, "H1_R1_filename_cascade | applied": 8, "H1_R2_restoration_role_marker |
+   466.6s  [submission] /tmp/tmp.3rtslGUFgl/submissions/S3_ensemble_quota_l0_lbq.csv counts={'적절': 415, '무의미형': 5, '파일명형': 8, '중복
+   466.6s  {
+   466.6s   "best_single": "x7j_stack_hgb",
+   466.6s   "ensemble_weights": {
+   466.6s    "x15_judge_lr": 0.1,
+   466.6s    "x17_stack_lgbm_b109": 0.9
+   466.6s   },
+   466.6s   "bias": {
+   466.6s    "적절": 0.0,
+   466.6s    "무의미형": 0.0,
+   466.6s    "파일명형": 0.0,
+   466.6s    "중복형": 0.0,
+   466.6s    "장식오용형": 0.0,
+   466.6s    "불충분형": 0.0,
+   466.6s    "무관형": 0.0
+   466.6s   },
+   466.6s   "residual_target": {
+   466.6s    "적절": 257,
+   466.6s    "무의미형": 4,
+   466.6s    "파일명형": 0,
+   466.6s    "중복형": 33,
+   466.6s    "장식오용형": 2,
+   466.6s    "불충분형": 50,
+   466.6s    "무관형": 4
+   466.6s   }
+   466.6s  }
+   466.6s    S2/S3 base: best_single
+   466.6s    honest_best_single         comp 0.7624 macro 0.6928 bin 0.8321
+   466.6s    honest_best_single_tw      comp 0.7658 macro 0.6964 bin 0.8352
+   466.6s    honest_ensemble            comp 0.7279 macro 0.6322 bin 0.8236
+   466.6s    honest_ensemble_bias       comp 0.7279 macro 0.6322 bin 0.8236
+   466.6s    honest_ensemble_tw         comp 0.6969 macro 0.5938 bin 0.7999
+   466.6s    honest_ensemble_bias_tw    comp 0.6969 macro 0.5938 bin 0.7999
+   466.6s    lora: {"run": "x6_qwen38_27b_lora_fold,x6_qwen35_9b_lora_fold", "test_from": {"x6_qwen38_27b_lora_fold": "full", "x6
+   466.6s  [run] x8 DONE in 466.5s
+   466.9s  reproduced: /content/pkg_demo/KoAltQ_submission_0.9357/outputs/reproduced_submission.csv
+   466.9s  sha256 87c3de688bd20937dc86abb9fb5e1171d6d012cd132aa23bd1c3f9611a9a1cf8
+   466.9s  OK - identical to submission/final_submission_0.9357.csv
+   466.9s  
+   466.9s  $ head -5 outputs/reproduced_submission.csv
+   466.9s  record_id,label
+   466.9s  r1f0f2535b5,적절
+   466.9s  r26de62967e,불충분형
+   466.9s  r32c16ad630,중복형
+   466.9s  r4cf5133795,불충분형
+   466.9s  
+   466.9s  $ cat outputs/harness_summary.json
+   466.9s  {
+   466.9s   "H0_public_row | applied": 109,
+   466.9s   "H1_R1_filename_cascade | applied": 8,
+   466.9s   "H1_R2_restoration_role_marker | applied": 116,
+   466.9s   "H2_template_twins | applied": 17,
+   466.9s   "H3_sole_link_never_decoration | applied": 1,
+   466.9s   "H4_structure_twins | applied": 6,
+   466.9s   "H4_structure_twins+H5a_original_labelers_never_give_it | not applied": 2,
+   466.9s   "H4_structure_twins+H5b_blend_and_judge_both_confident | not applied": 1
+   466.9s  }
+   466.9s  

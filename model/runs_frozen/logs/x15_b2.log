@@ -1,0 +1,10 @@
+[run] x15 start 19:09:21 args=[]
+[x15] judge features (3000, 32) from ['x14_qwen3vl_32b', 'x14_qwen3vl_32b_long', 'x12_qwen35_9b', 'x12_qwen3vl_32b', 'x12_qwen3vl_8b']
+=== x15_judge_lr ===
+  OOF(pooled)                comp 0.5289 | macro 0.4712 | bin 0.5867 (n=2400)
+  OOF(test-site-weighted)    comp 0.4381 | macro 0.3928 | bin 0.4835 (n=2400)
+  fold0(458)                 comp 0.5198 | macro 0.4657 | bin 0.5739 (n=458)
+  test boundary-109 diag     comp 0.4389 | macro 0.1483 | bin 0.7294 (n=109)
+  per-class F1 (OOF): 적절 0.69, 무의미형 0.51, 파일명형 0.68, 중복형 0.75, 장식오용형 0.04, 불충분형 0.41, 무관형 0.21
+  test pred counts: 적절 203, 무의미형 10, 파일명형 23, 중복형 68, 장식오용형 127, 불충분형 112, 무관형 57
+[run] x15 DONE in 3.6s

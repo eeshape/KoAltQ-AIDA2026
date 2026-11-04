@@ -1,0 +1,55 @@
+[run] x7 start 23:58:01 args=[]
+[x7] blocks: rules 72, svd 64, ocr 12, vlm/attr ['x3_internvl35_14b', 'x3_qwen35_9b', 'x12_qwen35_9b', 'x12_qwen38_27b', 'x12_qwen3vl_32b', 'x12_qwen3vl_8b'], judges ['x14_qwen35_9b', 'x14_qwen38_27b', 'x14_qwen38_27b_long', 'x14_qwen38_27b_long_ctx', 'x14_qwen38_27b_long_hires', 'x14_qwen38_27b_long_revctx', 'x14_qwen38_27b_long_rot2', 'x14_qwen38_27b_long_rot3', 'x14_qwen38_27b_long_rot4', 'x14_qwen38_27b_long_rot5', 'x14_qwen3vl_32b', 'x14_qwen3vl_32b_long', 'x14_qwen3vl_8b', 'avg27b_long[8]', 'x16_insuff_qwen38_27b_long', 'x16_ok_qwen38_27b_long']
+=== x7_stack_hgb ===
+  OOF(pooled)                comp 0.5959 | macro 0.4129 | bin 0.7789 (n=2400)
+  OOF(test-site-weighted)    comp 0.5642 | macro 0.3859 | bin 0.7425 (n=2400)
+  fold0(458)                 comp 0.6195 | macro 0.4961 | bin 0.7429 (n=458)
+  test boundary-109 diag     comp 0.5709 | macro 0.3316 | bin 0.8101 (n=109)
+  per-class F1 (OOF): 적절 0.91, 무의미형 0.06, 파일명형 0.41, 중복형 0.56, 장식오용형 0.26, 불충분형 0.70, 무관형 0.00
+  test pred counts: 적절 415, 무의미형 0, 파일명형 8, 중복형 24, 장식오용형 1, 불충분형 152, 무관형 0
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+=== x7_stack_lgbm ===
+  OOF(pooled)                comp 0.6095 | macro 0.4271 | bin 0.7918 (n=2400)
+  OOF(test-site-weighted)    comp 0.5970 | macro 0.4092 | bin 0.7848 (n=2400)
+  fold0(458)                 comp 0.6024 | macro 0.4571 | bin 0.7478 (n=458)
+  test boundary-109 diag     comp 0.5406 | macro 0.3181 | bin 0.7632 (n=109)
+  per-class F1 (OOF): 적절 0.91, 무의미형 0.00, 파일명형 0.38, 중복형 0.78, 장식오용형 0.20, 불충분형 0.73, 무관형 0.00
+  test pred counts: 적절 427, 무의미형 1, 파일명형 8, 중복형 25, 장식오용형 1, 불충분형 138, 무관형 0
+=== x7j_stack_hgb ===
+  OOF(pooled)                comp 0.7658 | macro 0.6958 | bin 0.8359 (n=2400)
+  OOF(test-site-weighted)    comp 0.7669 | macro 0.6915 | bin 0.8422 (n=2400)
+  fold0(458)                 comp 0.7835 | macro 0.7279 | bin 0.8392 (n=458)
+  test boundary-109 diag     comp 0.4860 | macro 0.1943 | bin 0.7778 (n=109)
+  per-class F1 (OOF): 적절 0.92, 무의미형 0.68, 파일명형 0.96, 중복형 0.85, 장식오용형 0.32, 불충분형 0.76, 무관형 0.37
+  test pred counts: 적절 421, 무의미형 5, 파일명형 8, 중복형 36, 장식오용형 1, 불충분형 126, 무관형 3
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+=== x7j_stack_lgbm ===
+  OOF(pooled)                comp 0.7763 | macro 0.7165 | bin 0.8361 (n=2400)
+  OOF(test-site-weighted)    comp 0.7661 | macro 0.7021 | bin 0.8302 (n=2400)
+  fold0(458)                 comp 0.7634 | macro 0.7141 | bin 0.8127 (n=458)
+  test boundary-109 diag     comp 0.4421 | macro 0.1746 | bin 0.7097 (n=109)
+  per-class F1 (OOF): 적절 0.92, 무의미형 0.69, 파일명형 0.94, 중복형 0.88, 장식오용형 0.32, 불충분형 0.75, 무관형 0.50
+  test pred counts: 적절 425, 무의미형 5, 파일명형 8, 중복형 40, 장식오용형 1, 불충분형 118, 무관형 3
+[run] x7 DONE in 351.1s

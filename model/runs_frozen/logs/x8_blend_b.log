@@ -1,0 +1,42 @@
+[run] x8 start 17:35:49 args=[]
+  lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+[submission] /content/runs/submissions/S1_best_single_l0.csv counts={'적절': 398, '무의미형': 2, '파일명형': 8, '중복형': 24, '장식오용형': 4, '불충분형': 164, '무관형': 0}
+[submission] /content/runs/submissions/S2_ensemble_bias_l0.csv counts={'적절': 388, '무의미형': 2, '파일명형': 8, '중복형': 24, '장식오용형': 5, '불충분형': 173, '무관형': 0}
+[submission] /content/runs/submissions/S3_ensemble_quota_l0.csv counts={'적절': 408, '무의미형': 5, '파일명형': 8, '중복형': 36, '장식오용형': 6, '불충분형': 133, '무관형': 4}
+{
+ "best_single": "x2_hgb_ocr",
+ "ensemble_weights": {
+  "x1_ctx_lr": 0.08,
+  "x2_hgb_ocr": 0.6,
+  "x3_internvl35_14b_lr": 0.16,
+  "x7_stack_hgb": 0.04,
+  "x7_stack_lgbm": 0.12
+ },
+ "bias": {
+  "적절": -0.25,
+  "무의미형": 0.9,
+  "파일명형": 0.0,
+  "중복형": 0.0,
+  "장식오용형": 0.0,
+  "불충분형": 0.0,
+  "무관형": 0.0
+ },
+ "residual_target": {
+  "적절": 272,
+  "무의미형": 3,
+  "파일명형": 0,
+  "중복형": 34,
+  "장식오용형": 2,
+  "불충분형": 34,
+  "무관형": 4
+ }
+}
+  S2/S3 base: ensemble
+  honest_best_single         comp 0.5967 macro 0.4258 bin 0.7676
+  honest_best_single_tw      comp 0.5498 macro 0.3724 bin 0.7273
+  honest_ensemble            comp 0.6038 macro 0.4354 bin 0.7722
+  honest_ensemble_bias       comp 0.5961 macro 0.4269 bin 0.7652
+  honest_ensemble_tw         comp 0.5717 macro 0.4077 bin 0.7356
+  honest_ensemble_bias_tw    comp 0.5601 macro 0.3951 bin 0.7251
+  lora: {"run": "x6_qwen35_9b_lora_fold", "test_from": {"x6_qwen35_9b_lora_fold": "full"}, "w_lora": 0.3, "fold0_honest_mix": 0.5222, "fold0_ensemble_only": 0.6001, "fold0_lora_only": 0.5948, "fold0_nested_bias_new": 0.6261, "fold0_bias_2400rows": 0.6255}
+[run] x8 DONE in 5.8s

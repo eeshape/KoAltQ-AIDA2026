@@ -1,0 +1,48 @@
+[run] x8 start 19:11:21 args=['--objective', 'lbq']
+  per-fold honest quota sim: {'caruana': 0.8604, 'single': 0.8399, 'blend:x7_stack_hgb': 0.8518, 'blend:x7_stack_lgbm': 0.8344} -> rule caruana
+  lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+  lora grid (fold0): {'0.0': 0.8397, '0.2': 0.855, '0.4': 0.8434, '0.6': 0.8431} -> w_lora 0.2
+[submission] /content/runs/submissions/S1_best_single_l0_lbq.csv counts={'적절': 369, '무의미형': 3, '파일명형': 8, '중복형': 43, '장식오용형': 5, '불충분형': 172, '무관형': 0}
+[submission] /content/runs/submissions/S2_ensemble_bias_l0_lbq.csv counts={'적절': 384, '무의미형': 3, '파일명형': 8, '중복형': 26, '장식오용형': 8, '불충분형': 171, '무관형': 0}
+[submission] /content/runs/submissions/S3_ensemble_quota_l0_lbq.csv counts={'적절': 408, '무의미형': 5, '파일명형': 8, '중복형': 36, '장식오용형': 6, '불충분형': 133, '무관형': 4}
+{
+ "best_single": "x7_stack_lgbm",
+ "ensemble_weights": {
+  "x15_judge_lr": 0.24,
+  "x1_ctx_lr": 0.2,
+  "x1_hgb": 0.04,
+  "x2_hgb_ocr": 0.08,
+  "x3_internvl35_14b_lr": 0.04,
+  "x3_internvl35_14b_mlp_bs": 0.04,
+  "x3_qwen35_9b_lr": 0.04,
+  "x7_stack_hgb": 0.12,
+  "x7_stack_lgbm": 0.2
+ },
+ "bias": {
+  "적절": 0.0,
+  "무의미형": 0.0,
+  "파일명형": 0.0,
+  "중복형": 0.0,
+  "장식오용형": 0.0,
+  "불충분형": 0.0,
+  "무관형": 0.0
+ },
+ "residual_target": {
+  "적절": 272,
+  "무의미형": 3,
+  "파일명형": 0,
+  "중복형": 34,
+  "장식오용형": 2,
+  "불충분형": 34,
+  "무관형": 4
+ }
+}
+  S2/S3 base: ensemble
+  honest_best_single         comp 0.7119 macro 0.6176 bin 0.8062
+  honest_best_single_tw      comp 0.6856 macro 0.5891 bin 0.7822
+  honest_ensemble            comp 0.6507 macro 0.5323 bin 0.7691
+  honest_ensemble_bias       comp 0.6507 macro 0.5323 bin 0.7691
+  honest_ensemble_tw         comp 0.6250 macro 0.4970 bin 0.7531
+  honest_ensemble_bias_tw    comp 0.6250 macro 0.4970 bin 0.7531
+  lora: {"run": "x6_qwen35_9b_lora_fold", "test_from": {"x6_qwen35_9b_lora_fold": "full"}, "w_lora": 0.2, "fold0_honest_mix": 0.5645, "fold0_ensemble_only": 0.5911, "fold0_lora_only": 0.5948, "fold0_nested_bias_new": 0.6101, "fold0_bias_2400rows": 0.6101}
+[run] x8 DONE in 402.1s

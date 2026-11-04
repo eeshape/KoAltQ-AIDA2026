@@ -1,0 +1,8 @@
+[run] x0 start 14:31:02 args=[]
+python 3.13.16 Linux-6.6.159+-x86_64-with-glibc2.39
+gpu NVIDIA A100-SXM4-80GB, 81920 MiB, 580.82.07
+torch 2.11.0+cu130 cuda 13.0 avail True
+bundle extracted: 208763033 bytes
+manifest ok: 3007 files {'train': 2400, 'test': 600, 'boundary_test': 109, 'boundary_train': 17}
+data ok: train 2400 test 600 fold0 458 boundary_test 109 | test-shift weights mean 1.00 max 4.33
+[run] x0 DONE in 6.8s

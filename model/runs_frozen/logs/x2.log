@@ -1,0 +1,37 @@
+[run] x2 start 14:35:18 args=['paddle']
+[32mCreating model: ('PP-OCRv5_server_det', None, None)[0m
+[33mChecking connectivity to the model hosters, this may take a while. To bypass this check, set `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` to `True`.[0m
+[32mUsing official model (PP-OCRv5_server_det), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/PP-OCRv5_server_det`.[0m
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  7.81it/s]Fetching 6 files:  83%|████████▎ | 5/6 [00:00<00:00, 21.75it/s]Fetching 6 files: 100%|██████████| 6/6 [00:01<00:00,  4.41it/s]
+[32mCreating model: ('korean_PP-OCRv5_mobile_rec', None, None)[0m
+[32mUsing official model (korean_PP-OCRv5_mobile_rec), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/korean_PP-OCRv5_mobile_rec`.[0m
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  7.55it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00,  6.89it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00,  6.91it/s]
+[ocr] 200/3000 0.09s/img with_text=68%
+[ocr] 400/3000 0.07s/img with_text=60%
+[ocr] 600/3000 0.07s/img with_text=60%
+[ocr] 800/3000 0.07s/img with_text=60%
+[ocr] 1000/3000 0.07s/img with_text=61%
+[ocr] 1200/3000 0.08s/img with_text=62%
+[ocr] 1400/3000 0.08s/img with_text=64%
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[ocr] 1600/3000 0.08s/img with_text=65%
+[ocr] 1800/3000 0.08s/img with_text=65%
+[ocr] 2000/3000 0.08s/img with_text=65%
+[ocr] 2200/3000 0.08s/img with_text=65%
+[ocr] 2400/3000 0.08s/img with_text=65%
+[ocr] 2600/3000 0.08s/img with_text=63%
+[ocr] 2800/3000 0.09s/img with_text=62%
+[ocr] 3000/3000 0.09s/img with_text=61%
+[ocr] summary {"engine": "paddle", "attempted": 3000, "ok": 3000, "err": 0, "with_text": 1835, "resumed_rows": 0, "seconds": 270.8, "errors_head": []}
+[x2] paddle worker exit 0 in 293.5s
+[x2] paddle: 3000/3000 rows, with text 1835
+[x2] images with OCR text: train 60.33% test 35.50%
+=== x2_hgb_ocr ===
+  OOF(pooled)                comp 0.6435 | macro 0.5077 | bin 0.7793 (n=2400)
+  OOF(test-site-weighted)    comp 0.5982 | macro 0.4468 | bin 0.7497 (n=2400)
+  fold0(458)                 comp 0.6024 | macro 0.5040 | bin 0.7008 (n=458)
+  test boundary-109 diag     comp 0.4943 | macro 0.2014 | bin 0.7871 (n=109)
+  per-class F1 (OOF): 적절 0.90, 무의미형 0.00, 파일명형 0.98, 중복형 0.67, 장식오용형 0.32, 불충분형 0.69, 무관형 0.00
+  test pred counts: 적절 432, 무의미형 0, 파일명형 8, 중복형 33, 장식오용형 1, 불충분형 126, 무관형 0
+[run] x2 DONE in 806.6s

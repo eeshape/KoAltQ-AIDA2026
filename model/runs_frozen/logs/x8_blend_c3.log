@@ -1,0 +1,41 @@
+[run] x8 start 23:27:59 args=['--objective', 'lbq']
+  per-fold honest quota sim: {'caruana': 0.8807, 'single': 0.8913, 'blend:x17_stack_lgbm_b109': 0.892, 'blend:x7_stack_hgb': 0.8726, 'blend:x7_stack_lgbm': 0.8774, 'blend:x7j_stack_hgb': 0.8957, 'blend:x7j_stack_lgbm': 0.8983} -> rule blend:x7j_stack_lgbm
+  lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+  lora grid (fold0): {'0.0': 0.9126, '0.2': 0.9036, '0.4': 0.8875, '0.6': 0.861} -> w_lora 0.0
+[submission] /content/runs/submissions/S1_best_single_l0_lbq.csv counts={'적절': 388, '무의미형': 6, '파일명형': 8, '중복형': 29, '장식오용형': 7, '불충분형': 159, '무관형': 3}
+[submission] /content/runs/submissions/S2_ensemble_bias_l0_lbq.csv counts={'적절': 379, '무의미형': 6, '파일명형': 8, '중복형': 39, '장식오용형': 7, '불충분형': 158, '무관형': 3}
+[submission] /content/runs/submissions/S3_ensemble_quota_l0_lbq.csv counts={'적절': 408, '무의미형': 6, '파일명형': 8, '중복형': 35, '장식오용형': 6, '불충분형': 133, '무관형': 4}
+{
+ "best_single": "x7j_stack_hgb",
+ "ensemble_weights": {
+  "x15_judge_lr": 0.1,
+  "x7j_stack_lgbm": 0.9
+ },
+ "bias": {
+  "적절": 0.0,
+  "무의미형": 0.0,
+  "파일명형": 0.0,
+  "중복형": 0.0,
+  "장식오용형": 0.0,
+  "불충분형": 0.0,
+  "무관형": 0.0
+ },
+ "residual_target": {
+  "적절": 272,
+  "무의미형": 3,
+  "파일명형": 0,
+  "중복형": 34,
+  "장식오용형": 2,
+  "불충분형": 34,
+  "무관형": 4
+ }
+}
+  S2/S3 base: best_single
+  honest_best_single         comp 0.7795 macro 0.7178 bin 0.8412
+  honest_best_single_tw      comp 0.7749 macro 0.7016 bin 0.8481
+  honest_ensemble            comp 0.7143 macro 0.6165 bin 0.8121
+  honest_ensemble_bias       comp 0.7143 macro 0.6165 bin 0.8121
+  honest_ensemble_tw         comp 0.6755 macro 0.5778 bin 0.7732
+  honest_ensemble_bias_tw    comp 0.6755 macro 0.5778 bin 0.7732
+  lora: {"run": "x6_qwen35_9b_lora_fold", "test_from": {"x6_qwen35_9b_lora_fold": "full"}, "w_lora": 0.0, "fold0_honest_mix": 0.7632, "fold0_ensemble_only": 0.7712, "fold0_lora_only": 0.5948}
+[run] x8 DONE in 484.5s

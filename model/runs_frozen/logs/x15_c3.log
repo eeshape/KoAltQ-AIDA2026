@@ -1,0 +1,10 @@
+[run] x15 start 23:21:29 args=[]
+[x15] judge features (3000, 110) from ['x14_qwen35_9b', 'x14_qwen38_27b', 'x14_qwen38_27b_long', 'x14_qwen38_27b_long_ctx', 'x14_qwen38_27b_long_hires', 'x14_qwen38_27b_long_revctx', 'x14_qwen38_27b_long_rot2', 'x14_qwen38_27b_long_rot4', 'x14_qwen3vl_32b', 'x14_qwen3vl_32b_long', 'x14_qwen3vl_8b', 'avg27b_long[6]', 'x16_insuff_qwen38_27b_long', 'x16_ok_qwen38_27b_long', 'x12_qwen35_9b', 'x12_qwen38_27b', 'x12_qwen3vl_32b', 'x12_qwen3vl_8b']
+=== x15_judge_lr ===
+  OOF(pooled)                comp 0.6854 | macro 0.6380 | bin 0.7328 (n=2400)
+  OOF(test-site-weighted)    comp 0.6294 | macro 0.5617 | bin 0.6972 (n=2400)
+  fold0(458)                 comp 0.6836 | macro 0.6740 | bin 0.6933 (n=458)
+  test boundary-109 diag     comp 0.4806 | macro 0.1822 | bin 0.7791 (n=109)
+  per-class F1 (OOF): 적절 0.83, 무의미형 0.67, 파일명형 0.94, 중복형 0.81, 장식오용형 0.12, 불충분형 0.64, 무관형 0.44
+  test pred counts: 적절 330, 무의미형 9, 파일명형 8, 중복형 45, 장식오용형 60, 불충분형 136, 무관형 12
+[run] x15 DONE in 12.7s

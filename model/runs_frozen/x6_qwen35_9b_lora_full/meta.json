@@ -1,0 +1,32 @@
+{
+ "mode": "full",
+ "backbone": "qwen35_9b",
+ "commit": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "epochs": 2.0,
+ "lr": 0.0001,
+ "accum": 16,
+ "rf_t": 0.06,
+ "tau": 1.0,
+ "r": 16,
+ "seed": 20261102,
+ "n_train": 2509,
+ "steps": 331,
+ "train_sec": 4258.7,
+ "infer_sec": 124.9,
+ "peak_gb": 19.06,
+ "sampled_prior": [
+  0.6102,
+  0.0231,
+  0.0236,
+  0.0561,
+  0.0253,
+  0.2438,
+  0.0179
+ ],
+ "final_loss": 0.15890575376140986,
+ "boundary_rows_in_training": true,
+ "ocr_sha": "3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51",
+ "train_cards_hash": "3a2298a5e582e082",
+ "max_image_tokens": 1024,
+ "reload_check": "pass"
+}

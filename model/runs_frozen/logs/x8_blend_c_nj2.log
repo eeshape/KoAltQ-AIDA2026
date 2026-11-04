@@ -1,0 +1,45 @@
+[run] x8 start 01:44:04 args=['--objective', 'lbq', '--exclude', '^(x14|x15|x16|x17|x7j)', '--suffix', '_nojudge']
+  per-fold honest quota sim: {'caruana': 0.8281, 'single': 0.7991} -> rule caruana
+  lora candidate x6_qwen35_9b_lora_fold: fold0 comp 0.5948
+  lora candidate x6_qwen38_27b_lora_fold: fold0 comp 0.7227
+  lora grid (fold0): {'0.0': 0.7709, '0.2': 0.8126, '0.4': 0.8445, '0.6': 0.8512} -> w_lora 0.6
+[submission] /content/runs/submissions/S1_best_single_l0_lbq_nojudge.csv counts={'적절': 405, '무의미형': 2, '파일명형': 8, '중복형': 25, '장식오용형': 5, '불충분형': 155, '무관형': 0}
+[submission] /content/runs/submissions/S2_ensemble_bias_l0_lbq_nojudge.csv counts={'적절': 372, '무의미형': 2, '파일명형': 8, '중복형': 26, '장식오용형': 29, '불충분형': 161, '무관형': 2}
+[submission] /content/runs/submissions/S3_ensemble_quota_l0_lbq_nojudge.csv counts={'적절': 408, '무의미형': 5, '파일명형': 8, '중복형': 35, '장식오용형': 6, '불충분형': 134, '무관형': 4}
+{
+ "best_single": "x7_stack_lgbm",
+ "ensemble_weights": {
+  "x1_ctx_lr": 0.32,
+  "x3_internvl35_14b_lr": 0.12,
+  "x3_qwen35_9b_lr": 0.12,
+  "x7_stack_hgb": 0.08,
+  "x7_stack_lgbm": 0.36
+ },
+ "bias": {
+  "적절": 0.0,
+  "무의미형": 0.0,
+  "파일명형": 0.0,
+  "중복형": 0.0,
+  "장식오용형": 0.0,
+  "불충분형": 0.0,
+  "무관형": 0.0
+ },
+ "residual_target": {
+  "적절": 257,
+  "무의미형": 4,
+  "파일명형": 0,
+  "중복형": 33,
+  "장식오용형": 2,
+  "불충분형": 50,
+  "무관형": 4
+ }
+}
+  S2/S3 base: ensemble
+  honest_best_single         comp 0.6069 macro 0.4298 bin 0.7839
+  honest_best_single_tw      comp 0.5727 macro 0.4078 bin 0.7375
+  honest_ensemble            comp 0.5745 macro 0.4110 bin 0.7381
+  honest_ensemble_bias       comp 0.5745 macro 0.4110 bin 0.7381
+  honest_ensemble_tw         comp 0.5557 macro 0.3890 bin 0.7225
+  honest_ensemble_bias_tw    comp 0.5557 macro 0.3890 bin 0.7225
+  lora: {"run": "x6_qwen38_27b_lora_fold,x6_qwen35_9b_lora_fold", "test_from": {"x6_qwen38_27b_lora_fold": "fold", "x6_qwen35_9b_lora_fold": "full"}, "w_lora": 0.6, "fold0_honest_mix": 0.6404, "fold0_ensemble_only": 0.5987, "fold0_lora_only": 0.6763, "fold0_nested_bias_new": 0.6429, "fold0_bias_2400rows": 0.6429}
+[run] x8 DONE in 332.5s

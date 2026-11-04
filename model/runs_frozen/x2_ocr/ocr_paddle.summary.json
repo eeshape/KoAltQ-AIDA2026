@@ -1,0 +1,10 @@
+{
+ "engine": "paddle",
+ "attempted": 3000,
+ "ok": 3000,
+ "err": 0,
+ "with_text": 1835,
+ "resumed_rows": 0,
+ "seconds": 270.8,
+ "errors_head": []
+}

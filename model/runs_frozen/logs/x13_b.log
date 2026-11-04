@@ -1,0 +1,6 @@
+[run] x13 start 17:39:49 args=[]
+/content/code/koaltq2/x13_spec.py:29: RuntimeWarning: Mean of empty slice
+  A = np.nanmean(np.stack(mats), axis=0)  # (3000, 5)
+[x13] source=x8_blend_lbobj | MC LB estimate: quota 0.8176 -> quota+specialists 0.8213 (sd 0.0197) | per-class {'적절': 0.962, '무의미형': 0.635, '파일명형': 1.0, '중복형': 0.782, '장식오용형': 0.694, '불충분형': 0.902, '무관형': 0.101}
+[submission] /content/runs/submissions/S4_quota_specialists_l0_x8_lbobj.csv counts={'적절': 404, '무의미형': 5, '파일명형': 8, '중복형': 34, '장식오용형': 6, '불충분형': 139, '무관형': 4}
+[run] x13 DONE in 3.2s

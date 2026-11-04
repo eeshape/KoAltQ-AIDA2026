@@ -1,0 +1,17 @@
+{
+ "model": "qwen35_9b",
+ "max_image_tokens": 1024,
+ "ocr_sha": "3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51",
+ "cards_hash": "7f50b370a8578720",
+ "repo": "Qwen/Qwen3.5-9B",
+ "commit": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "quant": null,
+ "n": 3000,
+ "dim": 16384,
+ "prompt_sha16": "a0f5a2d124bf9450",
+ "tokens_mean": 825.8256666666666,
+ "image_tokens_mean": 255.49166666666667,
+ "image_tokens_min": 64,
+ "seconds": 682.3,
+ "peak_gb": 19.95
+}

@@ -1,0 +1,29 @@
+[run] x7 start 19:07:21 args=[]
+[x7] blocks: rules 72, svd 64, ocr 12, vlm/attr ['x3_internvl35_14b', 'x3_qwen35_9b', 'x12_qwen35_9b', 'x12_qwen3vl_32b', 'x12_qwen3vl_8b', 'x14_qwen3vl_32b', 'x14_qwen3vl_32b_long']
+=== x7_stack_hgb ===
+  OOF(pooled)                comp 0.6784 | macro 0.5616 | bin 0.7952 (n=2400)
+  OOF(test-site-weighted)    comp 0.6285 | macro 0.5245 | bin 0.7325 (n=2400)
+  fold0(458)                 comp 0.7120 | macro 0.6352 | bin 0.7888 (n=458)
+  test boundary-109 diag     comp 0.5118 | macro 0.2092 | bin 0.8144 (n=109)
+  per-class F1 (OOF): 적절 0.91, 무의미형 0.73, 파일명형 0.41, 중복형 0.81, 장식오용형 0.26, 불충분형 0.69, 무관형 0.12
+  test pred counts: 적절 372, 무의미형 2, 파일명형 8, 중복형 50, 장식오용형 3, 불충분형 165, 무관형 0
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+=== x7_stack_lgbm ===
+  OOF(pooled)                comp 0.6844 | macro 0.5743 | bin 0.7945 (n=2400)
+  OOF(test-site-weighted)    comp 0.6437 | macro 0.5310 | bin 0.7564 (n=2400)
+  fold0(458)                 comp 0.6608 | macro 0.5614 | bin 0.7603 (n=458)
+  test boundary-109 diag     comp 0.4745 | macro 0.1884 | bin 0.7607 (n=109)
+  per-class F1 (OOF): 적절 0.91, 무의미형 0.35, 파일명형 0.96, 중복형 0.83, 장식오용형 0.26, 불충분형 0.71, 무관형 0.00
+  test pred counts: 적절 397, 무의미형 1, 파일명형 8, 중복형 51, 장식오용형 1, 불충분형 142, 무관형 0
+[run] x7 DONE in 162.1s

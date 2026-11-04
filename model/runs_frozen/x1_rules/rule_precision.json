@@ -1,0 +1,29 @@
+[
+ {
+  "rule": "R1_filename_cascade",
+  "label": "파일명형",
+  "train_fires": 27,
+  "train_tp": 26,
+  "train_precision": 0.9629629629629629,
+  "train_recall": 1.0,
+  "test_fires": 8
+ },
+ {
+  "rule": "R2_restoration_role_marker",
+  "label": "적절",
+  "train_fires": 0,
+  "train_tp": 0,
+  "train_precision": null,
+  "train_recall": 0.0,
+  "test_fires": 116
+ },
+ {
+  "rule": "R3_digit_only",
+  "label": "무의미형",
+  "train_fires": 6,
+  "train_tp": 6,
+  "train_precision": 1.0,
+  "train_recall": 0.25,
+  "test_fires": 0
+ }
+]

@@ -1,0 +1,47 @@
+[run] x6 start 16:20:16 args=['--mode', 'full', '--backbone', 'qwen35_9b']
+[fla] flash-linear-attention 0.6.0
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files: 100%|██████████| 16/16 [00:00<00:00, 1758.43it/s]
+Loading weights:   0%|          | 0/759 [00:00<?, ?it/s]Loading weights:   0%|          | 1/759 [00:00<05:43,  2.21it/s]Loading weights:   2%|▏         | 14/759 [00:00<00:23, 31.31it/s]Loading weights:   4%|▎         | 28/759 [00:00<00:13, 55.36it/s]Loading weights:   6%|▌         | 42/759 [00:00<00:09, 73.08it/s]Loading weights:   7%|▋         | 52/759 [00:00<00:09, 77.52it/s]Loading weights:   9%|▉         | 67/759 [00:01<00:07, 90.32it/s]Loading weights:  11%|█         | 81/759 [00:01<00:06, 97.16it/s]Loading weights:  13%|█▎        | 95/759 [00:01<00:06, 102.15it/s]Loading weights:  14%|█▍        | 106/759 [00:01<00:06, 101.25it/s]Loading weights:  16%|█▌        | 120/759 [00:01<00:06, 105.44it/s]Loading weights:  18%|█▊        | 134/759 [00:01<00:05, 108.79it/s]Loading weights:  19%|█▉        | 148/759 [00:01<00:05, 110.36it/s]Loading weights:  21%|██        | 160/759 [00:01<00:05, 108.83it/s]Loading weights:  23%|██▎       | 173/759 [00:02<00:05, 107.86it/s]Loading weights:  25%|██▍       | 186/759 [00:02<00:05, 106.86it/s]Loading weights:  26%|██▋       | 201/759 [00:02<00:05, 111.23it/s]Loading weights:  28%|██▊       | 213/759 [00:02<00:04, 109.77it/s]Loading weights:  30%|██▉       | 226/759 [00:02<00:04, 109.29it/s]Loading weights:  32%|███▏      | 240/759 [00:02<00:04, 110.75it/s]Loading weights:  33%|███▎      | 254/759 [00:02<00:04, 111.98it/s]Loading weights:  35%|███▌      | 266/759 [00:02<00:04, 110.43it/s]Loading weights:  37%|███▋      | 279/759 [00:02<00:04, 109.95it/s]Loading weights:  39%|███▊      | 293/759 [00:03<00:04, 112.24it/s]Loading weights:  40%|████      | 307/759 [00:03<00:04, 112.80it/s]Loading weights:  42%|████▏     | 319/759 [00:03<00:03, 110.39it/s]Loading weights:  44%|████▎     | 332/759 [00:03<00:03, 109.04it/s]Loading weights:  46%|████▌     | 346/759 [00:03<00:03, 110.77it/s]Loading weights:  47%|████▋     | 360/759 [00:03<00:03, 111.64it/s]Loading weights:  49%|████▉     | 372/759 [00:03<00:03, 108.22it/s]Loading weights:  51%|█████     | 385/759 [00:03<00:03, 108.19it/s]Loading weights:  53%|█████▎    | 399/759 [00:04<00:03, 110.05it/s]Loading weights:  54%|█████▍    | 413/759 [00:04<00:03, 110.16it/s]Loading weights:  56%|█████▌    | 425/759 [00:04<00:03, 107.36it/s]Loading weights:  72%|███████▏  | 546/759 [00:04<00:00, 393.93it/s]Loading weights:  87%|████████▋ | 662/759 [00:04<00:00, 600.74it/s]Loading weights: 100%|██████████| 759/759 [00:04<00:00, 164.92it/s]
+[transformers] [1mQwen3_5ForSequenceClassification LOAD REPORT[0m from: /root/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[x6] backbone=qwen35_9b commit=c202236235762e1c871ad0ccb60c8ee5ba337b9a lora_modules=200 trainable=40.1M
+[pixel-cap] family=qwen35 1536x1536 -> 1024 image tokens (cap 1024)
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[x6 full] ep0 step 25/332 micro 400/5306 loss 1.3098 0.87s/sample eta 71.5m peak 18.9GB
+[x6 full] ep0 step 50/332 micro 800/5306 loss 1.2580 0.83s/sample eta 62.7m peak 18.9GB
+[x6 full] ep0 step 75/332 micro 1200/5306 loss 1.2403 0.80s/sample eta 55.0m peak 19.1GB
+[x6 full] ep0 step 100/332 micro 1600/5306 loss 0.8979 0.79s/sample eta 48.6m peak 19.1GB
+[x6 full] ep0 step 125/332 micro 2000/5306 loss 0.5682 0.79s/sample eta 43.6m peak 19.1GB
+[x6 full] ep0 step 150/332 micro 2400/5306 loss 0.7396 0.79s/sample eta 38.5m peak 19.1GB
+[x6 full] ep1 step 175/332 micro 2800/5306 loss 0.3666 0.80s/sample eta 33.4m peak 19.1GB
+[x6 full] ep1 step 200/332 micro 3200/5306 loss 0.3635 0.80s/sample eta 28.1m peak 19.1GB
+[x6 full] ep1 step 225/332 micro 3600/5306 loss 0.3234 0.80s/sample eta 22.8m peak 19.1GB
+[x6 full] ep1 step 250/332 micro 4000/5306 loss 0.2845 0.80s/sample eta 17.5m peak 19.1GB
+[x6 full] ep1 step 275/332 micro 4400/5306 loss 0.2963 0.81s/sample eta 12.2m peak 19.1GB
+[x6 full] ep1 step 300/332 micro 4800/5306 loss 0.3193 0.81s/sample eta 6.8m peak 19.1GB
+[x6 full] ep1 step 325/332 micro 5200/5306 loss 0.2852 0.80s/sample eta 1.4m peak 19.1GB
+[x6] meta {'mode': 'full', 'backbone': 'qwen35_9b', 'commit': 'c202236235762e1c871ad0ccb60c8ee5ba337b9a', 'epochs': 2.0, 'lr': 0.0001, 'accum': 16, 'rf_t': 0.06, 'tau': 1.0, 'r': 16, 'seed': 20261102, 'n_train': 2509, 'steps': 331, 'train_sec': 4258.7, 'infer_sec': 124.9, 'peak_gb': 19.06, 'sampled_prior': [0.6102, 0.0231, 0.0236, 0.0561, 0.0253, 0.2438, 0.0179], 'final_loss': 0.15890575376140986, 'boundary_rows_in_training': True, 'ocr_sha': '3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51', 'train_cards_hash': '3a2298a5e582e082', 'max_image_tokens': 1024}
+=== x6_qwen35_9b_lora_full ===
+  test boundary-109 diag     comp 0.6827 | macro 0.4574 | bin 0.9081 (n=109)
+  test pred counts: 적절 224, 무의미형 6, 파일명형 8, 중복형 30, 장식오용형 73, 불충분형 256, 무관형 3
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files: 100%|██████████| 16/16 [00:00<00:00, 1700.85it/s]
+Loading weights:   0%|          | 0/759 [00:00<?, ?it/s]Loading weights:   0%|          | 1/759 [00:00<05:14,  2.41it/s]Loading weights:   2%|▏         | 13/759 [00:00<00:24, 30.83it/s]Loading weights:   4%|▎         | 27/759 [00:00<00:13, 56.13it/s]Loading weights:   6%|▌         | 42/759 [00:00<00:09, 76.78it/s]Loading weights:   7%|▋         | 53/759 [00:00<00:08, 83.12it/s]Loading weights:   9%|▉         | 67/759 [00:01<00:07, 92.46it/s]Loading weights:  11%|█         | 80/759 [00:01<00:06, 97.18it/s]Loading weights:  13%|█▎        | 95/759 [00:01<00:06, 105.83it/s]Loading weights:  14%|█▍        | 107/759 [00:01<00:06, 105.58it/s]Loading weights:  16%|█▌        | 120/759 [00:01<00:06, 106.31it/s]Loading weights:  18%|█▊        | 134/759 [00:01<00:05, 109.71it/s]Loading weights:  19%|█▉        | 148/759 [00:01<00:05, 112.23it/s]Loading weights:  21%|██        | 160/759 [00:01<00:05, 110.37it/s]Loading weights:  23%|██▎       | 173/759 [00:01<00:05, 109.67it/s]Loading weights:  25%|██▍       | 187/759 [00:02<00:05, 111.89it/s]Loading weights:  26%|██▋       | 201/759 [00:02<00:04, 112.99it/s]Loading weights:  28%|██▊       | 213/759 [00:02<00:04, 111.25it/s]Loading weights:  30%|██▉       | 225/759 [00:02<00:04, 107.76it/s]Loading weights:  32%|███▏      | 240/759 [00:02<00:04, 112.23it/s]Loading weights:  33%|███▎      | 254/759 [00:02<00:04, 113.05it/s]Loading weights:  35%|███▌      | 266/759 [00:02<00:04, 110.92it/s]Loading weights:  37%|███▋      | 279/759 [00:02<00:04, 110.26it/s]Loading weights:  39%|███▊      | 293/759 [00:03<00:04, 111.94it/s]Loading weights:  40%|████      | 306/759 [00:03<00:04, 109.55it/s]Loading weights:  42%|████▏     | 318/759 [00:03<00:04, 107.93it/s]Loading weights:  44%|████▎     | 332/759 [00:03<00:03, 110.32it/s]Loading weights:  45%|████▌     | 345/759 [00:03<00:03, 109.63it/s]Loading weights:  47%|████▋     | 360/759 [00:03<00:03, 113.96it/s]Loading weights:  49%|████▉     | 372/759 [00:03<00:03, 110.96it/s]Loading weights:  51%|█████     | 385/759 [00:03<00:03, 110.08it/s]Loading weights:  53%|█████▎    | 399/759 [00:03<00:03, 110.66it/s]Loading weights:  54%|█████▍    | 413/759 [00:04<00:03, 112.26it/s]Loading weights:  56%|█████▌    | 425/759 [00:04<00:03, 109.48it/s]Loading weights:  72%|███████▏  | 548/759 [00:04<00:00, 403.64it/s]Loading weights:  88%|████████▊ | 669/759 [00:04<00:00, 620.32it/s]Loading weights: 100%|██████████| 759/759 [00:04<00:00, 167.62it/s]
+[transformers] [1mQwen3_5ForSequenceClassification LOAD REPORT[0m from: /root/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[x6] reload check: max |Δprob| over 4 rows = 0.00000
+[run] x6 DONE in 4408.9s

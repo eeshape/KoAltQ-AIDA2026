@@ -1,0 +1,60 @@
+{
+ "name": "x6_qwen38_27b_lora_full",
+ "note": "discriminative LoRA on 2,400 + 109 boundary test rows (boundary diag is in-sample)",
+ "time": "2026-11-03 04:00:09",
+ "boundary109_diag": {
+  "macro_f1": 0.3648809523809523,
+  "binary_f1": 0.9010989010989011,
+  "composite": 0.6329899267399267,
+  "per_class_f1": {
+   "적절": 0.5,
+   "무의미형": 0.0,
+   "파일명형": 0.0,
+   "중복형": 0.6666666666666666,
+   "장식오용형": 0.5,
+   "불충분형": 0.8875,
+   "무관형": 0.0
+  },
+  "n": 109
+ },
+ "test_pred_counts": {
+  "적절": 337,
+  "무의미형": 10,
+  "파일명형": 19,
+  "중복형": 26,
+  "장식오용형": 38,
+  "불충분형": 164,
+  "무관형": 6
+ },
+ "meta": {
+  "mode": "full",
+  "backbone": "qwen38_27b",
+  "commit": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "epochs": 1.5,
+  "lr": 0.0001,
+  "accum": 16,
+  "rf_t": 0.06,
+  "tau": 1.0,
+  "r": 16,
+  "seed": 20261102,
+  "n_train": 2509,
+  "steps": 248,
+  "train_sec": 5928.3,
+  "infer_sec": 256.0,
+  "peak_gb": 56.83,
+  "sampled_prior": [
+   0.6102,
+   0.0231,
+   0.0236,
+   0.0561,
+   0.0253,
+   0.2438,
+   0.0179
+  ],
+  "final_loss": 0.3135413820115355,
+  "boundary_rows_in_training": true,
+  "ocr_sha": "3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51",
+  "train_cards_hash": "3a2298a5e582e082",
+  "max_image_tokens": 1024
+ }
+}

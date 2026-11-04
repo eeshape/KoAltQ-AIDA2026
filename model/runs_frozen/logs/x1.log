@@ -1,0 +1,29 @@
+[run] x1 start 14:31:22 args=[]
+[X1] L0 hard-rule precision on train / fires on test:
+    {'rule': 'R1_filename_cascade', 'label': '파일명형', 'train_fires': 27, 'train_tp': 26, 'train_precision': 0.9629629629629629, 'train_recall': 1.0, 'test_fires': 8}
+    {'rule': 'R2_restoration_role_marker', 'label': '적절', 'train_fires': 0, 'train_tp': 0, 'train_precision': None, 'train_recall': 0.0, 'test_fires': 116}
+    {'rule': 'R3_digit_only', 'label': '무의미형', 'train_fires': 6, 'train_tp': 6, 'train_precision': 1.0, 'train_recall': 0.25, 'test_fires': 0}
+=== x1_ctx_lr ===
+  OOF(pooled)                comp 0.3579 | macro 0.2409 | bin 0.4749 (n=2400)
+  OOF(test-site-weighted)    comp 0.3779 | macro 0.2729 | bin 0.4829 (n=2400)
+  fold0(458)                 comp 0.3559 | macro 0.3509 | bin 0.3608 (n=458)
+  test boundary-109 diag     comp 0.3750 | macro 0.1453 | bin 0.6047 (n=109)
+  per-class F1 (OOF): 적절 0.80, 무의미형 0.00, 파일명형 0.21, 중복형 0.06, 장식오용형 0.19, 불충분형 0.43, 무관형 0.00
+  test pred counts: 적절 521, 무의미형 0, 파일명형 1, 중복형 0, 장식오용형 2, 불충분형 76, 무관형 0
+=== x1_hgb ===
+  OOF(pooled)                comp 0.5907 | macro 0.4789 | bin 0.7026 (n=2400)
+  OOF(test-site-weighted)    comp 0.5473 | macro 0.4238 | bin 0.6708 (n=2400)
+  fold0(458)                 comp 0.5219 | macro 0.4650 | bin 0.5787 (n=458)
+  test boundary-109 diag     comp 0.4862 | macro 0.2012 | bin 0.7712 (n=109)
+  per-class F1 (OOF): 적절 0.87, 무의미형 0.00, 파일명형 0.98, 중복형 0.63, 장식오용형 0.32, 불충분형 0.56, 무관형 0.00
+  test pred counts: 적절 444, 무의미형 0, 파일명형 8, 중복형 24, 장식오용형 1, 불충분형 123, 무관형 0
+=== x1_blend ===
+  OOF(pooled)                comp 0.5380 | macro 0.3834 | bin 0.6926 (n=2400)
+  OOF(test-site-weighted)    comp 0.5245 | macro 0.3831 | bin 0.6660 (n=2400)
+  fold0(458)                 comp 0.4936 | macro 0.4527 | bin 0.5346 (n=458)
+  test boundary-109 diag     comp 0.4620 | macro 0.1724 | bin 0.7517 (n=109)
+  per-class F1 (OOF): 적절 0.87, 무의미형 0.00, 파일명형 0.41, 중복형 0.57, 장식오용형 0.25, 불충분형 0.58, 무관형 0.00
+  test pred counts: 적절 462, 무의미형 0, 파일명형 8, 중복형 6, 장식오용형 1, 불충분형 123, 무관형 0
+[submission] /content/runs/submissions/S0_x1_l0.csv counts={'적절': 419, '무의미형': 1, '파일명형': 8, '중복형': 17, '장식오용형': 4, '불충분형': 151, '무관형': 0}
+[X1] S0 base=x1_hgb l0={'rules': {'R2_restoration_role_marker': 116, 'R1_filename_cascade': 8}, 'boundary_overrides': 109, 'boundary_changed': 43}  (118.0s)
+[run] x1 DONE in 119.7s

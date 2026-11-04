@@ -1,0 +1,8 @@
+# CPU reproduction of the final submission (scripts/reproduce_best.sh, notebooks/01_reproduce_best.ipynb)
+# Versions = the Colab runtime where the reproduction was verified (Python 3.13.16, Ubuntu 24.04.4).
+# The same output (sha256 87c3de68...) was also obtained with Python 3.12.9 + numpy 2.5.4 / scipy 1.18.1 / scikit-learn 1.9.1.
+numpy==2.4.6
+scipy==1.16.3
+scikit-learn==1.6.1
+matplotlib==3.10.0   # figures in notebook 01
+lightgbm==4.6.0      # only needed to re-train the stackers (x7/x15/x17); see README 5-3

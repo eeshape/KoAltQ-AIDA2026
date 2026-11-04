@@ -1,0 +1,31 @@
+{
+ "mode": "fold",
+ "backbone": "qwen38_27b",
+ "commit": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+ "epochs": 1.5,
+ "lr": 0.0001,
+ "accum": 16,
+ "rf_t": 0.06,
+ "tau": 1.0,
+ "r": 16,
+ "seed": 20261102,
+ "n_train": 1942,
+ "steps": 192,
+ "train_sec": 4647.4,
+ "infer_sec": 432.2,
+ "peak_gb": 56.85,
+ "sampled_prior": [
+  0.6231,
+  0.0223,
+  0.0258,
+  0.0667,
+  0.0241,
+  0.2197,
+  0.0182
+ ],
+ "final_loss": 0.3530461037642908,
+ "boundary_rows_in_training": false,
+ "ocr_sha": "3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51",
+ "train_cards_hash": "a553c8ba144af259",
+ "max_image_tokens": 1024
+}

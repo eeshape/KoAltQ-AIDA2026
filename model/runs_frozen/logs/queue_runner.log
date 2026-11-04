@@ -1,0 +1,184 @@
+15:36:43 launched x12_qwen35_9b | gpu used 54.2 GB
+15:52:14 launched cleanup_internvl | gpu used 42.2 GB
+15:54:14 finished cleanup_internvl rc 0
+15:54:14 launched prefetch_27b | gpu used 42.2 GB
+15:57:15 finished prefetch_27b rc 0
+16:20:16 launched x6_qwen35_9b_full | gpu used 18.3 GB
+16:24:46 finished x12_qwen35_9b rc 0
+16:24:46 launched x7_stack_a | gpu used 18.9 GB
+16:27:46 finished x7_stack_a rc 0
+16:27:46 launched x8_blend_a | gpu used 18.9 GB
+16:29:46 finished x8_blend_a rc 1
+16:41:46 launched x12_qwen3vl_8b | gpu used 19.5 GB
+17:21:18 finished x12_qwen3vl_8b rc 0
+17:21:18 launched x7_stack_b | gpu used 19.5 GB
+17:24:18 finished x7_stack_b rc 0
+17:33:49 finished x6_qwen35_9b_full rc 0
+17:33:49 launched x12_qwen3vl_32b | gpu used 0.0 GB
+17:35:49 launched x8_blend_b | gpu used 62.6 GB
+17:37:49 finished x8_blend_b rc 0
+17:37:49 launched x8_blend_b_lb | gpu used 63.1 GB
+17:39:49 finished x8_blend_b_lb rc 0
+17:39:49 launched x13_b | gpu used 63.2 GB
+17:41:49 finished x13_b rc 0
+17:41:49 launched lb_b | gpu used 63.4 GB
+17:43:49 finished lb_b rc 0
+17:43:49 launched pick_b | gpu used 63.4 GB
+17:45:49 finished pick_b rc 0
+18:20:20 finished x12_qwen3vl_32b rc 0
+18:20:20 launched x14_qwen3vl_32b | gpu used 0.0 GB
+18:44:20 launched x14_qwen3vl_32b_long | gpu used 0.0 GB
+19:05:21 finished x14_qwen3vl_32b_long rc 0
+19:05:21 launched cleanup_qwen3vl32 | gpu used 0.0 GB
+19:07:21 finished cleanup_qwen3vl32 rc 0
+19:07:21 launched x7_stack_b2 | gpu used 0.0 GB
+19:09:21 launched x15_b2 | gpu used 0.0 GB
+19:11:21 finished x7_stack_b2 rc 0
+19:11:21 finished x15_b2 rc 0
+19:11:21 launched x8_blend_b2 | gpu used 0.0 GB
+19:13:21 launched x6_qwen38_27b_smoke | gpu used 0.0 GB
+19:18:21 finished x8_blend_b2 rc 0
+19:18:21 launched x13_b2 | gpu used 57.7 GB
+19:20:21 finished x13_b2 rc 0
+19:20:21 launched lb_b2 | gpu used 55.4 GB
+19:22:21 finished x6_qwen38_27b_smoke rc 0
+19:22:21 finished lb_b2 rc 0
+19:22:21 launched pick_b2 | gpu used 0.0 GB
+19:24:21 finished pick_b2 rc 0
+19:24:21 launched x14_qwen38_27b | gpu used 0.0 GB
+19:43:52 finished x14_qwen38_27b rc 0
+19:43:52 launched x14_qwen3vl_8b | gpu used 0.0 GB
+19:45:52 launched x14_qwen35_9b | gpu used 17.5 GB
+19:58:22 finished x14_qwen3vl_8b rc 0
+19:59:52 finished x14_qwen35_9b rc 0
+19:59:52 launched x15_c | gpu used 0.0 GB
+20:01:52 finished x15_c rc 0
+20:01:52 launched x7_stack_c | gpu used 0.0 GB
+20:03:52 launched x14_qwen38_27b_long | gpu used 0.0 GB
+20:07:23 finished x7_stack_c rc 0
+20:07:23 launched x8_blend_c0_lb | gpu used 54.2 GB
+20:15:23 finished x8_blend_c0_lb rc 0
+20:15:23 launched x13_c0 | gpu used 54.2 GB
+20:17:23 finished x13_c0 rc 0
+20:17:23 launched lb_c0 | gpu used 54.2 GB
+20:19:23 finished lb_c0 rc 0
+20:19:23 launched pick_c0 | gpu used 54.2 GB
+20:21:23 finished pick_c0 rc 0
+20:24:23 finished x14_qwen38_27b_long rc -15
+20:24:23 launched x14_qwen38_27b_long2 | gpu used 0.0 GB
+20:36:24 finished x14_qwen38_27b_long2 rc 0
+20:36:24 launched x12_qwen38_27b | gpu used 0.0 GB
+21:10:25 finished x12_qwen38_27b rc 0
+21:10:25 launched x7_stack_c05 | gpu used 0.0 GB
+21:12:25 launched x15_c05 | gpu used 0.0 GB
+21:14:25 finished x15_c05 rc 0
+21:14:25 launched x14_qwen38_27b_hires | gpu used 0.0 GB
+21:16:25 finished x7_stack_c05 rc 0
+21:16:25 launched x8_blend_c05 | gpu used 54.2 GB
+21:24:25 finished x8_blend_c05 rc 0
+21:24:25 launched x13_c05 | gpu used 54.2 GB
+21:26:25 finished x13_c05 rc 0
+21:26:26 launched lb_c05 | gpu used 54.2 GB
+21:28:26 finished lb_c05 rc 0
+21:28:26 launched pick_c05 | gpu used 54.2 GB
+21:30:26 finished pick_c05 rc 0
+21:30:56 finished x14_qwen38_27b_hires rc 0
+21:30:56 launched x14_qwen38_27b_revctx | gpu used 0.0 GB
+21:46:56 finished x14_qwen38_27b_revctx rc 0
+21:46:56 launched x16_insuff_27b | gpu used 0.0 GB
+22:02:57 finished x16_insuff_27b rc 0
+22:02:57 launched x16_ok_27b | gpu used 0.0 GB
+22:18:28 finished x16_ok_27b rc 0
+22:18:28 launched x7_stack_c1 | gpu used 0.0 GB
+22:20:28 launched x15_c1 | gpu used 0.0 GB
+22:22:28 finished x15_c1 rc 0
+22:22:28 launched x14_qwen38_27b_ctx | gpu used 0.0 GB
+22:24:28 finished x7_stack_c1 rc 0
+22:24:28 launched x17_c1 | gpu used 54.2 GB
+22:26:28 finished x17_c1 rc 0
+22:26:28 launched x8_blend_c1 | gpu used 54.2 GB
+22:34:58 finished x8_blend_c1 rc 0
+22:34:58 launched x13_c1 | gpu used 54.2 GB
+22:36:58 finished x13_c1 rc 0
+22:36:58 launched lb_c1 | gpu used 54.2 GB
+22:38:58 finished x14_qwen38_27b_ctx rc 0
+22:38:58 finished lb_c1 rc 0
+22:38:58 launched pick_c1 | gpu used 0.0 GB
+22:40:58 finished pick_c1 rc 0
+22:40:58 launched x7_stack_c2 | gpu used 0.0 GB
+22:42:58 launched x15_c2 | gpu used 0.0 GB
+22:44:58 finished x15_c2 rc 0
+22:44:58 launched x14_qwen38_27b_rot2 | gpu used 0.0 GB
+22:46:58 finished x7_stack_c2 rc 0
+22:46:58 launched x17_c2 | gpu used 54.2 GB
+22:48:58 finished x17_c2 rc 0
+22:48:58 launched x8_blend_c2 | gpu used 54.2 GB
+22:57:29 finished x8_blend_c2 rc 0
+22:57:29 launched x13_c2 | gpu used 54.2 GB
+22:59:29 finished x13_c2 rc 0
+22:59:29 launched lb_c2 | gpu used 54.2 GB
+23:01:29 finished x14_qwen38_27b_rot2 rc 0
+23:01:29 finished lb_c2 rc 0
+23:01:29 launched pick_c2 | gpu used 0.0 GB
+23:03:29 finished pick_c2 rc 0
+23:03:29 launched x14_qwen38_27b_rot4 | gpu used 0.0 GB
+23:19:29 finished x14_qwen38_27b_rot4 rc 0
+23:19:29 launched x7_stack_c3 | gpu used 0.0 GB
+23:21:29 launched x15_c3 | gpu used 0.0 GB
+23:23:29 finished x15_c3 rc 0
+23:23:29 launched x14_qwen38_27b_rot3 | gpu used 0.0 GB
+23:25:29 finished x7_stack_c3 rc 0
+23:25:29 launched x17_c3 | gpu used 54.2 GB
+23:27:59 finished x17_c3 rc 0
+23:27:59 launched x8_blend_c3 | gpu used 54.2 GB
+23:36:30 finished x8_blend_c3 rc 0
+23:36:30 launched x13_c3 | gpu used 54.2 GB
+23:38:30 finished x13_c3 rc 0
+23:38:30 launched lb_c3 | gpu used 54.2 GB
+23:40:30 finished x14_qwen38_27b_rot3 rc 0
+23:40:30 finished lb_c3 rc 0
+23:40:30 launched pick_c3 | gpu used 0.0 GB
+23:42:30 finished pick_c3 rc 0
+23:42:30 launched x14_qwen38_27b_rot5 | gpu used 0.0 GB
+23:58:00 finished x14_qwen38_27b_rot5 rc 0
+23:58:00 launched x7_stack_c4 | gpu used 0.0 GB
+00:00:00 launched x15_c4 | gpu used 0.0 GB
+00:02:00 finished x15_c4 rc 0
+00:02:01 launched x6_qwen38_27b_fold | gpu used 0.0 GB
+00:04:01 finished x7_stack_c4 rc 0
+00:04:01 launched x17_c4 | gpu used 53.6 GB
+00:06:31 finished x17_c4 rc 0
+00:06:31 launched x8_blend_c4 | gpu used 54.5 GB
+00:15:31 finished x8_blend_c4 rc 0
+00:15:31 launched x13_c4 | gpu used 54.5 GB
+00:17:31 finished x13_c4 rc 0
+00:17:31 launched lb_c4 | gpu used 54.5 GB
+00:19:31 finished lb_c4 rc 0
+00:19:31 launched pick_c4 | gpu used 54.5 GB
+00:21:31 finished pick_c4 rc 0
+01:27:34 finished x6_qwen38_27b_fold rc 0
+01:27:34 launched x8_blend_c_lb | gpu used 0.0 GB
+01:29:34 launched x8_blend_c_nj | gpu used 0.0 GB
+bash: -c: line 1: syntax error near unexpected token `('
+bash: -c: line 1: `cd /content && PYTHONPATH=/content/code python -u -m koaltq2.run x8 --objective lbq --exclude ^(x14|x15|x16|x17|x7j) --suffix _nojudge > /content/runs/logs/x8_blend_c_nj.log 2>&1'
+01:31:34 finished x8_blend_c_nj rc 2
+01:31:34 launched x14_qwen38_27b_rot1 | gpu used 0.0 GB
+01:36:04 finished x8_blend_c_lb rc 0
+01:36:04 launched x13_c | gpu used 54.2 GB
+01:38:04 finished x13_c rc 0
+01:38:04 launched lb_c | gpu used 54.2 GB
+01:40:04 finished lb_c rc 0
+01:40:04 launched pick_c | gpu used 54.2 GB
+01:42:04 finished pick_c rc 0
+01:42:04 launched x10_report | gpu used 54.2 GB
+01:44:04 launched x8_blend_c_nj2 | gpu used 54.2 GB
+01:46:04 finished x10_report rc 0
+01:47:04 finished x14_qwen38_27b_rot1 rc 0
+01:47:05 launched x14_qwen38_27b_rot6 | gpu used 0.0 GB
+01:50:05 finished x8_blend_c_nj2 rc 0
+01:50:05 launched x13_c_nj | gpu used 54.2 GB
+01:52:05 finished x13_c_nj rc 0
+01:52:05 launched lb_c_nj | gpu used 54.2 GB
+01:54:05 finished lb_c_nj rc 0
+01:54:05 launched pick_c_nj | gpu used 54.2 GB
+01:56:05 finished pick_c_nj rc 0

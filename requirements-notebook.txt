@@ -1,0 +1,8 @@
+# Running the notebooks locally (Colab already has these). Versions of the Colab runtime where notebook 01 was executed.
+ipykernel==6.17.1
+ipython==7.34.0
+notebook==6.5.7
+nbconvert==7.17.2
+nbformat==5.11.1
+jupyter_client==7.4.9
+jupyter_core==5.9.1

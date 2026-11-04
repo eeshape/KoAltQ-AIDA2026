@@ -1,0 +1,23 @@
+[run] x12 start 15:36:43 args=['--model', 'qwen35_9b']
+[fla] flash-linear-attention 0.6.0
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files: 100%|██████████| 16/16 [00:00<00:00, 1869.07it/s]
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<05:30,  2.30it/s]Loading weights:   0%|          | 2/760 [00:01<06:32,  1.93it/s]Loading weights:   2%|▏         | 15/760 [00:01<00:39, 19.08it/s]Loading weights:   4%|▎         | 28/760 [00:01<00:19, 36.79it/s]Loading weights:   6%|▌         | 42/760 [00:01<00:13, 53.67it/s]Loading weights:   7%|▋         | 52/760 [00:01<00:11, 60.28it/s]Loading weights:   9%|▉         | 67/760 [00:01<00:09, 75.96it/s]Loading weights:  11%|█         | 81/760 [00:01<00:07, 85.22it/s]Loading weights:  12%|█▏        | 94/760 [00:01<00:07, 94.42it/s]Loading weights:  14%|█▍        | 105/760 [00:01<00:07, 86.61it/s]Loading weights:  16%|█▌        | 120/760 [00:02<00:06, 97.75it/s]Loading weights:  18%|█▊        | 133/760 [00:02<00:05, 105.36it/s]Loading weights:  19%|█▉        | 147/760 [00:02<00:05, 107.91it/s]Loading weights:  21%|██        | 159/760 [00:02<00:06, 97.38it/s] Loading weights:  23%|██▎       | 173/760 [00:02<00:05, 102.78it/s]Loading weights:  25%|██▍       | 187/760 [00:02<00:05, 105.06it/s]Loading weights:  26%|██▋       | 200/760 [00:02<00:05, 111.31it/s]Loading weights:  28%|██▊       | 212/760 [00:02<00:05, 99.19it/s] Loading weights:  30%|██▉       | 226/760 [00:03<00:05, 104.85it/s]Loading weights:  31%|███▏      | 239/760 [00:03<00:04, 110.60it/s]Loading weights:  33%|███▎      | 252/760 [00:03<00:04, 115.65it/s]Loading weights:  35%|███▍      | 264/760 [00:03<00:05, 95.76it/s] Loading weights:  37%|███▋      | 279/760 [00:03<00:04, 103.37it/s]Loading weights:  39%|███▊      | 293/760 [00:03<00:04, 105.38it/s]Loading weights:  40%|████      | 307/760 [00:03<00:04, 106.93it/s]Loading weights:  42%|████▏     | 318/760 [00:04<00:04, 100.22it/s]Loading weights:  44%|████▎     | 332/760 [00:04<00:04, 105.69it/s]Loading weights:  45%|████▌     | 345/760 [00:04<00:03, 111.50it/s]Loading weights:  47%|████▋     | 359/760 [00:04<00:03, 112.02it/s]Loading weights:  49%|████▉     | 371/760 [00:04<00:03, 98.87it/s] Loading weights:  51%|█████     | 385/760 [00:04<00:03, 104.27it/s]Loading weights:  52%|█████▏    | 398/760 [00:04<00:03, 109.98it/s]Loading weights:  54%|█████▍    | 410/760 [00:04<00:03, 112.32it/s]Loading weights:  56%|█████▌    | 422/760 [00:04<00:03, 95.48it/s] Loading weights:  61%|██████▏   | 466/760 [00:05<00:01, 179.35it/s]Loading weights:  73%|███████▎  | 553/760 [00:05<00:00, 357.24it/s]Loading weights:  84%|████████▍ | 641/760 [00:05<00:00, 497.59it/s]Loading weights:  95%|█████████▍| 721/760 [00:05<00:00, 578.72it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 138.99it/s]
+[pixel-cap] family=qwen35 1536x1536 -> 1024 image tokens (cap 1024)
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[x12 qwen35_9b] 200/3000 1.57s/rec
+[x12 qwen35_9b] 400/3000 1.58s/rec
+[x12 qwen35_9b] 600/3000 1.40s/rec
+[x12 qwen35_9b] 800/3000 1.25s/rec
+[x12 qwen35_9b] 1000/3000 1.20s/rec
+[x12 qwen35_9b] 1200/3000 1.15s/rec
+[x12 qwen35_9b] 1400/3000 1.12s/rec
+[x12 qwen35_9b] 1600/3000 1.10s/rec
+[x12 qwen35_9b] 1800/3000 1.06s/rec
+[x12 qwen35_9b] 2000/3000 1.03s/rec
+[x12 qwen35_9b] 2200/3000 1.00s/rec
+[x12 qwen35_9b] 2400/3000 0.98s/rec
+[x12 qwen35_9b] 2600/3000 0.96s/rec
+[x12 qwen35_9b] 2800/3000 0.94s/rec
+[x12 qwen35_9b] 3000/3000 0.95s/rec
+[x12] train AUCs: {"auc_무관형_vs_rest(1-q_match)": 0.873, "auc_장식오용형_vs_rest(q_decor)": 0.81, "auc_불충분형_vs_중복형(q_photo)": 0.719, "auc_불충분형_vs_적절(q_info)": 0.611, "auc_무의미형_vs_rest(q_empty)": 0.845}
+[run] x12 DONE in 2859.6s

@@ -1,0 +1,17 @@
+{
+ "model": "internvl35_14b",
+ "max_image_tokens": 1024,
+ "ocr_sha": "3cb586c82a5ce96e38b63a3127175a6d9ec207566290981b2018c36474104a51",
+ "cards_hash": "7f50b370a8578720",
+ "repo": "OpenGVLab/InternVL3_5-14B-HF",
+ "commit": "226b96d5912e69159abc0384cefcbd51487fdce0",
+ "quant": null,
+ "n": 3000,
+ "dim": 20480,
+ "prompt_sha16": "a0f5a2d124bf9450",
+ "tokens_mean": 1323.8436666666666,
+ "image_tokens_mean": 619.3493333333333,
+ "image_tokens_min": 256,
+ "seconds": 1812.6,
+ "peak_gb": 31.69
+}
