@@ -414,7 +414,7 @@ AI는 코드 작성, 실험 운영, 분석에 적극적으로 썼습니다. 무�
 | Codex CLI (OpenAI) | GPT-6-Astra, GPT-6-Luna(하위 에이전트), 일부 GPT-6.1-Sol | 문제 분석, 실험 (10-27, 11-01) | 초기 VLM 베이스라인 실행과 테스트, Colab A100에서 VLM 후보(Kanana, Qwen 계열 등) 비교 |
 | Codex CLI (OpenAI) | GPT-6.1-Sol (reasoning high, 읽기 전용) | 계획 (11-02) | Claude 계획과 따로 작성한 실험 계획. 둘을 비교해 혼합안을 고름 |
 | Codex CLI (OpenAI) | GPT-6-Astra (읽기 전용) | 계획 (11-05) | 제출본 정리와 데모 계획. Claude 계획과 비교 |
-| OpenAI Codex (팀원 사용) | - | 문서 작성 (11-05) | 연구실 서버 실행 환경 확인, README 초안(3절 서버 환경, 7절 서버 실행, 문제 해결 표) |
+| OpenAI Codex (팀원 사용) | GPT-6-Astra | 문서 작성 (11-05) | 연구실 서버 실행 환경 확인, README 초안(3절 서버 환경, 7절 서버 실행, 문제 해결 표) |
 | Google Colab CLI | 0.7.5 | 실험 실행 | Claude Code가 Colab A100 세션에서 학습·추론 작업을 실행하고 결과를 내려받음 |
 | Orca computer use | - | 리더보드 제출 | 참가자 승인 아래 결과 파일 업로드와 점수 확인을 자동화 (로그인은 참가자가 직접) |
 | Claude Code 멀티 에이전트 리뷰 | 리뷰어 3 + 반박 검증 7 (11-02), 리뷰어 3 + 검증 1 (11-04, 2회) | 코드·결과물 검토 | 코드 결함 7건 수정, 하네스 코드 동치성 확인, 결과물 점검 |
