@@ -9,6 +9,7 @@ amount, how to apply) and is absent from alt + link text + context => '불충분
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -28,7 +29,7 @@ _KW = ["기간", "일시", "장소", "대상", "신청", "접수", "문의", "�
 
 def ensure_ocr_venv(engine: str) -> Path:
     """Per-engine venv created WITHOUT ensurepip (Colab's python3.13 lacks it); packages via `pip --python`."""
-    venv = Path(f"/content/venv_ocr_{engine}")
+    venv = Path(os.environ.get("KOALTQ_OCR_VENV_ROOT", "/content")) / f"venv_ocr_{engine}"
     py = venv / "bin" / "python"
     probe = "import paddleocr" if engine == "paddle" else "import easyocr"
     if py.exists() and subprocess.run([str(py), "-c", probe], capture_output=True).returncode == 0:

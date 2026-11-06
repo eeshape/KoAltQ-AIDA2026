@@ -21,9 +21,6 @@ import numpy as np
 from .common import DERIVED_TEST_COUNTS, L2I, LABELS, N_CLASSES, RUNS, Data, test_shift_weights
 from .rules import l0_rule_label
 
-LEADERBOARD = {"1위 팀": 0.9228, "2위 D-LAB": 0.8930, "3위 YSA": 0.8892, "4위 못나지않은사람들(우리 팀)": 0.8374}
-
-
 def fixed_rows(data: Data) -> dict[int, int]:
     from .rules import l0_fixed
 
@@ -127,7 +124,6 @@ def main() -> None:
     for i, r in enumerate(rows, 1):
         print(f"{i:>3} {r['run']:34s} {r['lb_est']:7.4f} {r['lb_est_macro']:7.4f} {r['lb_est_binary']:7.4f} "
               f"{r['sim_argmax']:9.4f} {r['sim_quota']:9.4f} {r['oof_comp']:8.4f} {r['rows']:>8}")
-    print("참고(실제 리더보드):", ", ".join(f"{k} {v}" for k, v in LEADERBOARD.items()))
 
 
 def quota_assign(L: np.ndarray, target: np.ndarray, iters: int = 120, eta: float = 0.4) -> np.ndarray:

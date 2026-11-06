@@ -3,6 +3,8 @@
 > `RL Lnnn`은 `docs/experiment_log.md`의 줄 번호입니다.
 > 경로 대응: `cells/*.py` → `scripts/colab/*.py`, `RUN_LOG.md` → `docs/experiment_log.md`. `bootstrap.sh`·`queue.json`·`qedit*.py`는 제출물에 없음(내부 작업 파일).
 > 실행 순서는 `notebooks/02_full_pipeline_colab.ipynb`에 그대로 옮겼습니다.
+> **제출본 정리(2026-11-06)**: 최종 파일에 영향이 없는 실험 모듈(x10 보고서, x11 교차 인코더, x13 희소 클래스 실험, x18 추론형 판정기, x19 LoRA 스태커, pick, harness_val)과 리더보드 분석 도구는 제출본에서 뺐습니다.
+> 아래의 x10·x11·x13·x19·pick 관련 행은 원래 실행 기록으로 남겨 둡니다. x11·x13 출력을 뺀 `model/runs_frozen/`으로도 최종 파일의 sha256이 같음을 확인했고, 노트북 02에서도 x11 단계를 뺐습니다.
 
 # KoAltQ best submission (21번, LB 0.9357): commands that produced every run directory
 
