@@ -14,20 +14,13 @@ CELLS = {
     "x3": "koaltq2.x3_frozen",
     "x6": "koaltq2.x6_lora",
     "x7": "koaltq2.x7_stack",
-    "x11": "koaltq2.x11_xenc",
     "x12": "koaltq2.x12_attr",
     "x8": "koaltq2.x8_blend",
-    "x10": "koaltq2.x10_report",
     "lb": "koaltq2.lbest",
-    "pick": "koaltq2.pick",
-    "x13": "koaltq2.x13_spec",
     "x14": "koaltq2.x14_judge",
     "x15": "koaltq2.x15_judge_lr",
     "x17": "koaltq2.x17_boundary",
-    "x18": "koaltq2.x18_think",
-    "x19": "koaltq2.x19_lorastack",
     "harness": "koaltq2.harness",
-    "hval": "koaltq2.harness_val",
 }
 
 
